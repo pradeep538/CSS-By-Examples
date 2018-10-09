@@ -1,0 +1,71 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    width: 100%;
+    height: 1700px;
+    background-color: aliceblue;
+}
+.static-block{
+    position: static;
+    width: 100%;
+    height: 150px;
+    background-color: bisque;
+    left:100px;
+}
+
+.relative-block{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: aqua;
+    top:10px;
+    left:100px;
+    padding:20px;
+    border:solid black 10px;;
+}
+.relative-block-2{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: aqua;
+    padding:20px;
+    border:solid black 10px;;
+}
+.relative-block-2 > div{
+    float: left;
+    height: 120px;
+    width: 150px;
+    z-index: 1;
+}
+.block{
+    width: 100px;
+    height: 100px;
+    padding-right: 20px;
+    border: solid white 2px;
+    background-color: rgb(159, 14, 226);
+}
+.block-4{
+    position: absolute;
+    right: 200px;
+}
+.absolute-block{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(241, 120, 6);
+    left: 100px;;
+
+}
+.block-2{
+    z-index: 5;
+}
+.fixed-block{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    bottom: 10px;
+    background-color: rgb(132, 132, 202);
+    /* z-index: 10; */
+}
